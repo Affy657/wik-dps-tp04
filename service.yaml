@@ -1,0 +1,25 @@
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: service
+#   namespace: ad
+# spec:
+#   selector:
+#     tier: frontend
+#   ports:
+#     - protocol: TCP
+#       port: 80
+#       targetPort: 8080
+#---
+apiVersion: v1
+kind: Service
+metadata:
+  name: service
+  namespace: ad
+spec:
+  selector:
+    tier: frontend
+  ports:
+    - protocol: TCP
+      port: 8070
+      targetPort: 8080
